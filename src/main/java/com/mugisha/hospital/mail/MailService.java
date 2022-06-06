@@ -21,7 +21,7 @@ public class MailService {
         Email to = new Email(emailReciever);
         Content content = new Content("text/plain", "Dear " + recieverName + " your appointment is " + appointMentStatus);
         Mail mail = new Mail(from, subject, to, content);
-        String SENDGRID_API_KEY="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";
+        String SENDGRID_API_KEY="";
         SendGrid sg = new SendGrid(SENDGRID_API_KEY);
         Request request = new Request();
         try {
